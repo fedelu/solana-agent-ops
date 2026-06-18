@@ -1,0 +1,22 @@
+# Secrets — NEVER commit. Only .env.example (public values) is tracked.
+.env
+.env.*
+!.env.example
+*.key
+keys/
+keypair*.json
+wallet*.json
+
+# Runtime state written by the reference bot
+reference-impl/.state/
+*.log
+
+# Node
+node_modules/
+dist/
+*.tsbuildinfo
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

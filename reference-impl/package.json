@@ -1,0 +1,22 @@
+{
+  "name": "solana-agent-ops-reference",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reference agent demonstrating the solana-agent-ops skill: simulate-first landing, idempotency, spend caps, kill switch, heartbeat, one-cycle-per-run.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.ts",
+    "cycle": "node src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@solana-program/compute-budget": "^0.16.0",
+    "@solana-program/system": "^0.12.2",
+    "@solana/kit": "^6.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "typescript": "^5.5.0"
+  }
+}
